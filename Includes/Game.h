@@ -4,9 +4,9 @@
 #include "Level.h"
 #include "BonusHealth.h"
 #include "FinalBoss.h"
-
-//#include "CollisionUtilities.h"
-//#include "Obstacles.h"
+#include "Enemy_IceGolum.h"
+#include "Enemy_DirtGolum.h"
+#include "Enemy_LavaGolum.h"
 
 
 class Game
@@ -19,10 +19,10 @@ public:
     void render();
     void checkCollisions();
 
-    
     void saveGame();
     void loadGame();
 
+    void resetWave();
 private:
     sf::Time deltaTime;
 
@@ -35,8 +35,24 @@ private:
     Level level;
     BonusHealth* bonusHealth;
 
+    IceGolum* iceGolum;
+    DirtGolum* dirtGolum;
+    LavaGolum* lavaGolum;
+
     FinalBoss* finalBoss;
     bool isFinalBoss;
 
+    int characterSkin;
+    int waveNumber;
+
+    sf::Font font;
+    sf::Text messageWaveCompleted;
+    sf::Text messageWaveNumber;
+    sf::Text messageGameOver;
+    sf::Clock gameOverTime;
+    bool isGameOver;
+
+    void resetIfPlayerDead();
     void keyboardInput();
+    void printMessages();
 };

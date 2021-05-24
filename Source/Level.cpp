@@ -13,7 +13,8 @@ Level::Level()
 
     initBackgrounds();
 
-    backgroundIndex = 0;
+    srand(time(0));
+    backgroundIndex = rand() % 6;
 
     isAtFinalBoss = false;
 }
@@ -97,17 +98,6 @@ void Level::update(bool isPlayerAtFinalBoss)
 
 }
 
-void Level::setBackgroundIndex(int backgroundIndex)
-{
-    this->backgroundIndex = backgroundIndex;
-}
-
-int Level::getBackgroundIndex()
-{
-    return backgroundIndex;
-}
-
-
 /*************************************************************************************
 *Renders the backgrounds on the window
 * @param window Where we want our background to be drawn
@@ -117,4 +107,15 @@ int Level::getBackgroundIndex()
 void Level::draw(sf::RenderWindow * window)
 {
     window->draw(backgrounds[backgroundIndex]);
+}
+
+
+void Level::setBackgroundIndex(int backgroundIndex)
+{
+    this->backgroundIndex = backgroundIndex;
+}
+
+int Level::getBackgroundIndex()
+{
+    return backgroundIndex;
 }

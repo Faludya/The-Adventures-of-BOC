@@ -6,7 +6,7 @@ MainMenu::MainMenu() : window(sf::VideoMode(width, height), "The Adventures of B
 	{
 
 	}
-
+	srand(time(0));
 	level = new Level();
 
 	randomBackground = rand() % 6;

@@ -15,7 +15,9 @@ public:
 	bool checkCollision(sf::FloatRect spriteShape);
 	sf::FloatRect getFinalBossRect();
 	void updateHealth(int healthModifier);
-
+	bool getIsWaveCompleted();
+	bool getPrintWaveCompleted();
+	void setIsWaveCompleted(bool wave);
 
 private:
 	sf::Texture bossTexture;
@@ -48,8 +50,10 @@ private:
 	sf::Vector2f velocity;
 	sf::Vector2f gravity;
 
+	sf::Clock animationClock;
 	bool isDying, isHurt, isShooting;
-
+	bool isWaveCompleted;
+	bool printWaveCompleted;
 //Functions
 	void InitAnimations();
 };

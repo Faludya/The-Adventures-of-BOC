@@ -20,7 +20,7 @@ public:
 	int getPlayerHealth();
 	void setPlayerPoints(int playerPoints);
 	int getPlayerPoints();
-
+	void addPoints();
 protected:
 	//Animations and Textures
 	sf::Texture pTexture1, pTexture2, pTexture3, 

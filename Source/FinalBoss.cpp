@@ -1,4 +1,5 @@
 #include "..\Includes\FinalBoss.h"
+
 /*************************************************************************************
 *Constructor. Initializes the parameters needed
 * 
@@ -24,13 +25,16 @@ FinalBoss::FinalBoss()
 	animatedSprite.setScale(pAnimationScale);
 	animatedSprite.setPosition(bPosition);
 
-	health = 1000;
+	health = 500;
 
 	srand(time(0));
 	minShootDelay = 100;
 	maxShootDelay = 100;
 	bullets = new  Bullet(200, 150, 18, "./Resources/Images/Rock2.png");
 
+
+	isWaveCompleted = false;
+	printWaveCompleted = false;
 }
 
 /*************************************************************************************
@@ -110,8 +114,20 @@ void FinalBoss::update(sf::Time deltaTime)
 		animationUpdate(deltaTime);
 		bullets->deleteBullets();;
 
+		if (animationClock.getElapsedTime().asSeconds() >= 1) {
+			animatedSprite.setPosition(bPosition);
+			printWaveCompleted = true;
+		}
+
+		if (animationClock.getElapsedTime().asSeconds() >= 10) {
+			isWaveCompleted = true;
+			printWaveCompleted = false;
+		}
+
 		return;
 	}
+	if (health > 0) 
+		animationClock.restart();
 
 	int randomVar = rand() % 100;
 	if (randomVar <= 50)
@@ -215,4 +231,19 @@ sf::FloatRect FinalBoss::getFinalBossRect()
 
 void FinalBoss::updateHealth(int healthModifier) {
 	health += healthModifier;
+}
+
+bool FinalBoss::getIsWaveCompleted()
+{
+	return isWaveCompleted;
+}
+
+bool FinalBoss::getPrintWaveCompleted()
+{
+	return printWaveCompleted;
+}
+
+void FinalBoss::setIsWaveCompleted(bool wave)
+{
+	isWaveCompleted = wave;
 }

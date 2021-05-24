@@ -6,7 +6,7 @@ SelectCharacterMenu::SelectCharacterMenu() : window(sf::VideoMode(width, height)
 	{
 
 	}
-
+	srand(time(0));
 	level = new Level();
 	randomBackground = rand() % 6;
 	level->setBackgroundIndex(randomBackground);

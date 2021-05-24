@@ -73,7 +73,7 @@ void Bullet::update()
 	for (int i = 0; i < bullets.size(); i++) {
 		bullets[i].move(shootDirections[i] * speed, 0.f);
 
-		if (bullets[i].getPosition().x >= 1650 || bullets[i].getPosition().x <= 0) {
+		if (bullets[i].getPosition().x >= 1600 || bullets[i].getPosition().x <= 0) {
 			bullets.erase(bullets.begin() + i);
 			shootDirections.erase(shootDirections.begin() + i);
 		}

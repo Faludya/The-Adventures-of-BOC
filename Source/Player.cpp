@@ -194,14 +194,6 @@ void Player::keyboardInput(const sf::Time deltaTime)
 		//shoot bullet
 		currentAnimation = &throwAnimation;
 		bullets->shoot(pPosition, deltaTime, faceRight);
-//#################################################################################
-		//TODO : dont forget to delete this after implementing the enemies
-
-		if (points + 20 <= MAX_POINTS) {
-			points += 20;
-			pointsBar->updateSprite(points);
-		}
-//#################################################################################
 	}
 
 	this->animationUpdate(deltaTime);
@@ -386,6 +378,13 @@ void Player::setPlayerPoints(int playerPoints)
 int Player::getPlayerPoints()
 {
 	return points;
+}
+
+void Player::addPoints()
+{
+	if(points + 100 <= MAX_POINTS)
+		points += 100;
+	pointsBar->updateSprite(points);
 }
 
 /*************************************************************************************
