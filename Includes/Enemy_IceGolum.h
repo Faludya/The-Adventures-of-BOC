@@ -17,6 +17,7 @@ public:
 	sf::FloatRect getEnemyGlobalBounds();
 	void updateHealth(int addedHealth);
 	int getEnemyHealth();
+	void reset();
 private:
 	sf::Texture golumTexture;
 	sf::Sprite golumSprite;

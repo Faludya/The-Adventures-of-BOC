@@ -295,19 +295,20 @@ std::fstream saveData("./Resources/data.txt");
      delete finalBoss;
      finalBoss = new FinalBoss();
 
-     delete iceGolum;
-     iceGolum = new IceGolum();
 
-     delete dirtGolum;
-     dirtGolum = new DirtGolum();
+     iceGolum->reset();
+     dirtGolum->reset();
+     lavaGolum->reset();
 
-     delete lavaGolum;
-     lavaGolum = new LavaGolum();
 
      delete bonusHealth;
      bonusHealth = new BonusHealth();
 
-     int nextLevel = (level.getBackgroundIndex() + 1) % 6;
-     level.setBackgroundIndex(nextLevel);
-
+     int nextLevel = level.getBackgroundIndex() + 1;
+     if (nextLevel < 5)
+         level.setBackgroundIndex(nextLevel);
+     else
+         level.setBackgroundIndex(0);
+     //int nextLevel = (level.getBackgroundIndex() + 1) % 6;
+     //level.setBackgroundIndex(nextLevel);
  }

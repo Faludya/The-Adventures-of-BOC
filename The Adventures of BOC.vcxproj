@@ -88,12 +88,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The Adventures of BOC\SFML\vc14_2.5.1x32\include;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The Adventures of BOC\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\SFML\vc14_2.5.1x32\include;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The Adventures of BOC\SFML\vc14_2.5.1x32\lib;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The Adventures of BOC\Source;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Media\Desktop\The Adventures of BOC\The Adventures of BOC\SFML\vc14_2.5.1x32\lib;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\Source;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;sfml-network-s-d.lib;sfml-audio-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -105,14 +105,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The Adventures of BOC\SFML\vc14_2.5.1x32\include;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The Adventures of BOC\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\SFML\vc14_2.5.1x32\include;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The Adventures of BOC\SFML\vc14_2.5.1x32\lib;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The Adventures of BOC\Source;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Media\Desktop\The Adventures of BOC\The Adventures of BOC\SFML\vc14_2.5.1x32\lib;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\Source;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;sfml-network-s-d.lib;sfml-audio-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -120,17 +120,12 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\Includes;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\SFML\vc14_2.5.1x32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OmitFramePointers>false</OmitFramePointers>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\SFML\vc14_2.5.1x32\lib;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\Source;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;sfml-network-s-d.lib;sfml-audio-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -139,19 +134,14 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\Includes;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\SFML\vc14_2.5.1x32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OmitFramePointers>false</OmitFramePointers>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\SFML\vc14_2.5.1x32\lib;D:\Media\Desktop\Proiecte Facultate\Computer Graphics\The-Adventures-of-BOC-Bitbucket\Source;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;sfml-network-s-d.lib;sfml-audio-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -159,6 +149,9 @@
     <ClCompile Include="Source\Animation.cpp" />
     <ClCompile Include="Source\BonusHealth.cpp" />
     <ClCompile Include="Source\Bullet.cpp" />
+    <ClCompile Include="Source\Enemy_DirtGolum.cpp" />
+    <ClCompile Include="Source\Enemy_IceGolum.cpp" />
+    <ClCompile Include="Source\Enemy_LavaGolum.cpp" />
     <ClCompile Include="Source\FinalBoss.cpp" />
     <ClCompile Include="Source\Game.cpp" />
     <ClCompile Include="Source\Level.cpp" />
@@ -174,6 +167,9 @@
     <ClInclude Include="Includes\Animation.h" />
     <ClInclude Include="Includes\BonusHealth.h" />
     <ClInclude Include="Includes\Bullet.h" />
+    <ClInclude Include="Includes\Enemy_DirtGolum.h" />
+    <ClInclude Include="Includes\Enemy_IceGolum.h" />
+    <ClInclude Include="Includes\Enemy_LavaGolum.h" />
     <ClInclude Include="Includes\FinalBoss.h" />
     <ClInclude Include="Includes\Game.h" />
     <ClInclude Include="Includes\Level.h" />

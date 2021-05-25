@@ -181,3 +181,9 @@ int DirtGolum::getEnemyHealth()
 {
 	return health;
 }
+
+void DirtGolum::reset()
+{
+	animatedSprite.setPosition(gPosition);
+	health = 100;
+}

@@ -26,7 +26,6 @@ IceGolum::IceGolum()
 	bullets = new  Bullet(120, 85, 10, "./Resources/Images/Rock2.png");
 
 	currentAnimation = &throwAnimation;
-
 }
 
 /*************************************************************************************
@@ -180,4 +179,10 @@ void IceGolum::updateHealth(int addedHealth)
 int IceGolum::getEnemyHealth()
 {
 	return health;
+}
+
+void IceGolum::reset()
+{
+	animatedSprite.setPosition(gPosition);
+	health = 100;
 }

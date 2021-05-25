@@ -181,3 +181,9 @@ int LavaGolum::getEnemyHealth()
 {
 	return health;
 }
+
+void LavaGolum::reset()
+{
+	animatedSprite.setPosition(gPosition);
+	health = 100;
+}

@@ -105,12 +105,12 @@ bool Bullet::isColliding(sf::FloatRect bullet,sf::FloatRect spriteShape) {
 * @return bool
 *************************************************************************************/
 bool Bullet::checkCollision(sf::FloatRect spriteShape) {
-	for (int i = 0; i < bullets.size(); i++)
-		if (isColliding(bullets[i].getGlobalBounds(), spriteShape)) {
-			bullets.erase(bullets.begin() + i);
-			shootDirections.erase(shootDirections.begin() + i);
-			return true;
-		}
+		for (int i = 0; i < bullets.size(); i++)
+			if (isColliding(bullets[i].getGlobalBounds(), spriteShape)) {
+				bullets.erase(bullets.begin() + i);
+				shootDirections.erase(shootDirections.begin() + i);
+				return true;
+			}
 
 	return false;
 }
